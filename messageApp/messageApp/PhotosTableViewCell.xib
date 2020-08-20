@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoCell" rowHeight="244" id="KGk-i7-Jjw" customClass="PhotosTableViewCell" customModule="messageApp">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="244"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="PhotoTableViewCell" customModule="messageApp">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="243.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rDJ-mo-6MI">
+                        <rect key="frame" x="16" y="21" width="240" height="201"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="240" id="Vwn-LL-jqq"/>
+                            <constraint firstAttribute="height" constant="201" id="hNw-XR-hYC"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rDJ-mo-6MI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="EPh-JH-0Iy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="rDJ-mo-6MI" secondAttribute="bottom" constant="11" id="gUt-mD-fSE"/>
+                    <constraint firstItem="rDJ-mo-6MI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="gu5-em-K6L"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="constraintForLeading" destination="gu5-em-K6L" id="RIg-vK-88j"/>
+                <outlet property="photoImage" destination="rDJ-mo-6MI" id="pLb-y1-W1X"/>
+            </connections>
+            <point key="canvasLocation" x="44.5" y="154"/>
+        </tableViewCell>
+    </objects>
+</document>

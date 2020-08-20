@@ -1,0 +1,6 @@
+framework module Pods_messageApp {
+  umbrella header "Pods-messageApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
